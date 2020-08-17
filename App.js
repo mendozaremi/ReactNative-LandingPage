@@ -1,20 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
+import { View } from 'react-native';
+import WelcomeScreen from './app/screens/WelcomeScreen';
+import ViewImageScreen from './app/screens/ViewImageScreen';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello World</Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
+    // <WelcomeScreen />;
+    <ViewImageScreen />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
